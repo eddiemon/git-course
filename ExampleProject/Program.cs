@@ -23,7 +23,7 @@ namespace Example
             }
 
             // Should throw as the value is an int
-            var _ = new StateObserver<string>(stateManager, "test.bar", s => Console.WriteLine("test.bar changed value to: " + s));
+            var _ = new StateObserver<int>(stateManager, "test.bar", s => Console.WriteLine("test.bar changed value to: " + s));
 
             stateManager.SetState("test.bar", 1337);
 
