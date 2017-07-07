@@ -14,5 +14,6 @@ namespace StateFramework
 
         public string Path { get; }
         public StatePath.PermissionModifier Permission { get; set; }
+
     }
 }

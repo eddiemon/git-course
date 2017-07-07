@@ -43,5 +43,10 @@ namespace StateFramework
         {
             return this.Path.Equals(other.Path);
         }
+
+        //public static override implicit  operator StatePath(string statePath)
+        //{
+        //    return Create(statePath, )
+        //}
     }
 }
