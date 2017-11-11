@@ -2,11 +2,14 @@
 
 namespace Example
 {
-    public class ExampleStateProvider : IStateSetter
+    public class NewExampleStateProvider : IStateSetter
     {
         string _foo = "asd";
         int _bar = 14;
         bool _mux = true;
+
+        [StatePath("something.useful")]
+        public string TheUsefulStuff => "Git Is So Cool (aaw thats cheesy)";
 
         [StatePath("example.foo")]
         public string Foo { get { return _foo; } private set { _foo = value; StateChanged?.Invoke("example.foo", _foo); } }
