@@ -2,7 +2,7 @@
 
 namespace Example
 {
-    public class NewExampleStateProvider : IStateSetter
+    public class ExampleStateProvider : IStateSetter
     {
         string _foo = "asd";
         int _bar = 14;
